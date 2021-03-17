@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: 200px; /* Should be removed. Only for demonstration */
+        }
+
+        .content2 {
+            background-color: khaki;
+            padding: 10px;
+            height: 200px;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<Header>
+<Header class="topnav">
     <h1>Headline for header</h1>
     <nav>
         <a href="http://www.google.com" target="_blank">Google link 1</a>
@@ -15,12 +63,12 @@
     </nav>
 </Header>
 
-<div>
+<div class="content">
     <h3>Headline</h3>
     <p>This is paragraph with some text.</p>
 </div>
 
-<div>
+<div class="content2">
     <h3>Login</h3>
     <form>
         <label>User:</label>
@@ -64,8 +112,9 @@
     </table>
 </div>
 
-<footer>
+<footer class="footer">
     <p><span>&copy;</span>Reine Moberg</p>
 </footer>
+
 </body>
 </html>
